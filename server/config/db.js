@@ -18,6 +18,9 @@ export const connectDB = async () => {
     console.warn(`⚠️ Standard MongoDB connection failed (${err.message}). Starting MongoMemoryServer in-memory database...`);
     try {
       mongoMemoryServer = await MongoMemoryServer.create({
+        binary: {
+          version: '7.0.14',
+        },
         instance: {
           dbName: 'campus_number_one',
         }
