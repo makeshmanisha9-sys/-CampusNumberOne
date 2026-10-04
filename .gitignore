@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production builds
+dist/
+client/dist/
+dist-ssr/
+client/dist-ssr/
+*.local
+
+# Environment variables
+.env
+server/.env
+client/.env
+.env*.local
+
+# Server dynamic uploads (preserve folder structure)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor & OS files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
